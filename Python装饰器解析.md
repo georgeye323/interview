@@ -170,8 +170,10 @@ def f(x):
 ```python
 # 有一个函数bar()，偶尔会抛出超时异常（TimeoutError)
 # 请完成retry，使bar()在遇到这种异常时可以重试指定的次数 
+from functools import wraps
 def retry(exception: Exception, max_retries: int):
     def decorator(func):
+        @wraps(func)
         def wrapper(*args, **kwargs):
             for i in range(max_retries):
                 try:
