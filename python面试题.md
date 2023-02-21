@@ -148,3 +148,37 @@ A,B 中相同元素： print(set(A)&set(B))
 A,B 中不同元素:  print(set(A)^set(B))
 ```
 
+​	**企业面试题**
+
+​		15. python新式类和经典类的区别？
+
+   * 在python里凡是继承了object的类，都是新式类
+
+   * python3里只有新式类
+
+   *  Python2里面继承object的是新式类，没有写父类的是经典类
+
+   *  经典类目前在Python里基本没有应用、
+
+     16. python中内置的数据结构有几种？
+
+         ```
+         整型 int
+         浮点型 float
+         复数型 complex
+         小数型 decimal
+         字符串 str
+         列表 list
+         字典 dict
+         集合 set
+         元组 tuple
+         ```
+
+     17. python如何实现单例模式？请写出两种实现方式？
+
+     ```python
+     class Singleton(object):
+     	
+     ```
+
+     
